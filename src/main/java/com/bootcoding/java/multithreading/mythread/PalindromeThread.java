@@ -9,7 +9,6 @@ public class PalindromeThread extends Thread {
             System.out.println(num + " is not a palindrome number.");
         }
     }
-    // Function to check if a number is a palindrome
     public static boolean isPalindrome(int num) {
         int originalNum = num;
         int reversedNum = 0;
@@ -19,7 +18,6 @@ public class PalindromeThread extends Thread {
             reversedNum = reversedNum * 10 + digit;
             num /= 10;
         }
-        // Check if the reversed number is equal to the original number
         return originalNum == reversedNum;
     }
 }
